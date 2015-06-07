@@ -1,0 +1,12 @@
+<% #Provide the page title in a symbol to application.html.erb to avoid duplication %>
+<% provide :title, "Home" %>
+
+<div class=" text-center">
+  <h1 class="ciao">Welcome to <br>Awake</h1>
+
+  <h2>
+    Sign up or login to start using <%= link_to "PoliRun", root_path%>.
+  </h2>
+
+  <%= link_to "Sign up now!", signup_path, class:"btn btn-primary btn-lg", role:"button"%>
+</div>
